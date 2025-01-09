@@ -1,0 +1,148 @@
+/* Reset delle impostazioni di base del browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stile generale del corpo della pagina */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1; /* Grigio chiaro */
+    color: #333; /* Testo scuro per il corpo */
+    line-height: 1.6;
+}
+
+/* Header e navigazione */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #2c3e50; /* Blu scuro */
+    color: #ecf0f1; /* Testo chiaro nell'header */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ecf0f1;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #ecf0f1; /* Link chiari */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    background-color: #34495e; /* Hover più chiaro */
+    border-radius: 5px;
+}
+
+/* Layout principale */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Sezione Intro */
+.intro {
+    margin-bottom: 30px; /* Distanza tra l'introduzione e gli strumenti */
+}
+
+/* Sezioni degli strumenti */
+.tools-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 50px; /* Distanza tra la sezione intro e gli strumenti */
+}
+
+.tool-card {
+    background-color: #fff; /* Sfondo chiaro per le card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px); /* Effetto hover per le card */
+}
+
+.tool-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50; /* Titolo scuro */
+}
+
+.tool-card p {
+    font-size: 1rem;
+    color: #7f8c8d; /* Grigio chiaro per il testo */
+}
+
+.tool-card a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #e67e22; /* Colore del pulsante */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.tool-card a:hover {
+    background-color: #d35400; /* Colore pulsante al passaggio del mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* Blu scuro */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+    .tool-card {
+        width: 100%;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
