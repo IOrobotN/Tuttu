@@ -1,0 +1,147 @@
+/* Stile generale per il layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #007BFF;
+}
+
+/* Sezione principale */
+main {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.intro {
+  background-color: #e0e0e0;
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.intro h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Griglia strumenti */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 80px;  /* Aumentato il gap per maggior distanza verticale e orizzontale */
+  padding: 20px;
+}
+
+.tool {
+  position: relative;
+}
+
+.tool a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tool-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.tool-content img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.tool-content h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.tool-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+.tool:hover .tool-content {
+  transform: scale(1.05);
+}
